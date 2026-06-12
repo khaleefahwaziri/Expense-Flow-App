@@ -104,7 +104,7 @@ struct ChartsView: View {
             .frame(height: 200)
         }
         .padding()
-        .background(Color(.secondarySystemGroupedBackground))
+        .background(Color(.secondaryLabelColor)))
         .clipShape(RoundedRectangle(cornerRadius: 16))
     }
 
@@ -138,7 +138,7 @@ struct ChartsView: View {
             }
         }
         .padding()
-        .background(Color(.secondarySystemGroupedBackground))
+        .background(Color(.secondaryLabelColor))
         .clipShape(RoundedRectangle(cornerRadius: 16))
     }
 }
@@ -147,3 +147,5 @@ struct ChartsView: View {
     ChartsView()
         .modelContainer(for: Expense.self, inMemory: true)
 }
+
+
