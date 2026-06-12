@@ -125,36 +125,7 @@ struct DashboardView: View {
         .clipShape(RoundedRectangle(cornerRadius: 16))
     }
 
-    private var recentExpensesSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack {
-                Text("Recent Transactions")
-                    .font(.headline)
-                Spacer()
-            }
-
-            if recentExpenses.isEmpty {
-                EmptyStateView(
-                    icon: "tray",
-                    title: "No expenses yet",
-                    message: "Tap + to add your first expense"
-                )
-            } else {
-                VStack(spacing: 0) {
-                    ForEach(recentExpenses) { expense in
-                        ExpenseRowView(expense: expense)
-                        if expense.id != recentExpenses.last?.id {
-                            Divider()
-                        }
-                    }
-                }
-                .padding(.vertical, 4)
-                .padding(.horizontal, 12)
-                .background(Color(.secondarySystemGroupedBackground))
-                .clipShape(RoundedRectangle(cornerRadius: 16))
-            }
-        }
-    }
+  
 }
 
 #Preview {
