@@ -73,7 +73,7 @@ struct ExpensesListView: View {
                     Button {
                         showingAddExpense = true
                     } label: {
-                        Image(systemName: "plus.circle.fill")
+                        Image(systemName: "plus.circle")
                             .font(.title2)
                     }
                 }
@@ -90,7 +90,7 @@ struct ExpensesListView: View {
     private var categoryFilterBar: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {
-                CategoryPill(title: "All", icon: "square.grid.2x2", color: .gray, isSelected: selectedCategory == nil) {
+                CategoryPill(title: "All", icon: "square.grid.2x2", color: .black, isSelected: selectedCategory == nil) {
                     selectedCategory = nil
                 }
                 ForEach(ExpenseCategory.allCases) { category in

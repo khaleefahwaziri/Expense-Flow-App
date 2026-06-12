@@ -104,7 +104,7 @@ struct ChartsView: View {
             .frame(height: 200)
         }
         .padding()
-        .background(Color(.secondaryLabelColor)))
+        .background(Color(.secondarySystemGroupedBackground))
         .clipShape(RoundedRectangle(cornerRadius: 16))
     }
 
@@ -138,7 +138,7 @@ struct ChartsView: View {
             }
         }
         .padding()
-        .background(Color(.secondaryLabelColor))
+        .background(Color(.secondarySystemGroupedBackground))
         .clipShape(RoundedRectangle(cornerRadius: 16))
     }
 }
