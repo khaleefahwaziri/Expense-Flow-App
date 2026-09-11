@@ -147,5 +147,3 @@ struct ChartsView: View {
     ChartsView()
         .modelContainer(for: Expense.self, inMemory: true)
 }
-
-

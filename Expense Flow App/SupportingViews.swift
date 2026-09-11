@@ -55,7 +55,7 @@ struct CategoryPill: View {
             }
             .padding(.horizontal, 12)
             .padding(.vertical, 8)
-            .background(isSelected ? color : Color(.secondarySystemGroupedBackground))
+            .background(isSelected ? color : Color(.gray))
             .foregroundStyle(isSelected ? .white : .primary)
             .clipShape(Capsule())
         }
